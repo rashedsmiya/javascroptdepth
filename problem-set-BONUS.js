@@ -29,8 +29,9 @@ vip ||= 3; // vip = vip || 3 vip = 0 || 3
 console.log(vip);
 
 let loggedIn = typeof 10;
-loggedIn ??= 5; 
-console.log(loggedIn);
+loggedIn ??= 5;  // loggedin = loggedin ?? 0
+// loggedin = null ?? 0
+console.log(loggedIn); 
 
 
 
