@@ -1,76 +1,34 @@
-// var i = 0;
-// while(true)
+// for (let i = 0; i < 100; i += 5){
+//     console.log(i);
 
-// {
-//     if(i==3)
-//     {
-//         break;
-//     }
-//     console.log(i); // 0 1 2
-//     i++;
-// }
-
-
-// let number = 0;
-
-// while (number < 1){ // while (true)
-//     console.log(number);
-//     number++;
-// }
-
-// let number = 0;
-
-// while (number < 3) {
-//     console.log(number);
-//     number++; // number = number + 1;
-// }
-
-// console.log("All Done!");
-
-// let counter = 5;
-
-// while (counter <= 10) {
-//     console.log(counter);
-//     break;
-//     console.log("increasing counter....");
-//     counter--;
-// }
-
-// console.log("Thanks for playing!");
-
-// let score = 0;
-
-// // infinite loop
-// while (true) {
-//     console.log("inside the loop!");
-     
-//     if (score >= 3){
+//     if (i === 25) {
+//         console.log("ha, gotcha!");
 //         break;
 //     }
 
-//    score++;
-// }
+//     if (i === 15){
+//         break;
+//     }
 
-// console.log("Done the loop!");
-
-// let loopNumber = 5;
-
-// while (loopNumber <= 10){
-//     console.log(loopNumber);
-//     loopNumber++;
-// }
-
-let loggedin = false;
-let loopCounter = 0;
-
-while (!loggedin){
-    console.log(loopCounter);
-    if(loopCounter === 3){
-        loggedin = true;
-    }
+//     console.log("This is loop", i);
     
-    loopCounter++;
+// }
+
+
+for (let i = 0; i < 100; i += 10){
+    console.log(i);
+
+    if(i === 10){
+        i += 10;
+        continue;
+    }
+
+    console.log('Loop number', i);
+
+    if (i === 60){
+        break;
+    }
+
 }
 
-// after the loop
-console.log("Sucessfully logged in!");
+
